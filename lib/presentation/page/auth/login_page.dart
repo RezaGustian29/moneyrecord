@@ -27,13 +27,13 @@ class _LoginPageState extends State<LoginPage> {
         controllerPassword.text,
       );
       if (success) {
-        DInfo.dialogSuccess(context, 'Berhasil Login');
-        DInfo.closeDialog(context, actionAfterClose: () {
+        DInfo.dialogSuccess('Berhasil Login');
+        DInfo.closeDialog(actionAfterClose: () {
           Get.off(() => const HomePage());
         });
       } else {
-        DInfo.dialogError(context, 'Gagal Login');
-        DInfo.closeDialog(context);
+        DInfo.dialogError('Gagal Login');
+        DInfo.closeDialog();
       }
     }
   }

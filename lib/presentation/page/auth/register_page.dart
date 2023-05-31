@@ -1,4 +1,3 @@
-import 'package:d_info/d_info.dart';
 import 'package:d_view/d_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -69,7 +68,6 @@ class _RegisterPageState extends State<RegisterPage> {
                                 value == '' ? 'Jangan Kosong' : null,
                             autovalidateMode:
                                 AutovalidateMode.onUserInteraction,
-                            obscureText: true,
                             style: const TextStyle(color: Colors.white),
                             decoration: InputDecoration(
                               fillColor: AppColor.primary.withOpacity(0.5),

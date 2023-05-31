@@ -10,5 +10,6 @@ class CUser extends GetxController {
           createdAt: '',
           updatedAt: '')
       .obs;
+  User get data => _data.value;
   setData(n) => _data.value = n;
 }
